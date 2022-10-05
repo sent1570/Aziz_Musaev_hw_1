@@ -21,10 +21,14 @@ private double engineVolume;
 
 
     }
-    void makeSignal (String signal,int count,String drive ) {
-        super.makeSignal(signal,count);
-        System.out.println("Ferrari "+ getModel() +  " " + drive);
-    }
+
+    @Override
+    void makeSignal(String signal, int count) {
+        super.makeSignal(signal, count);
+            System.out.println("Ferrari "+ getModel() +  " " + "is driving");
+        }
+
+
     public String getModel() {
         return model;
     }
